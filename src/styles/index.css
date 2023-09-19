@@ -63,6 +63,7 @@ p{
     flex-direction: column;
 }
 .container_histories{
+    padding-top: 7%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -73,23 +74,89 @@ p{
     height: 110px;
 }
 .histories__img{
-    width: 3.8rem;
-    height: 3.8rem;
-    border-radius: 2rem ;
+    width: 3.8em;
+    height: 3.8em;
+    border-radius: 2em ;
     border: solid rgb(160, 67, 23) 2px;
     background-color: blueviolet;
 }
 .main__container__post{
+    padding-top: 5%;
     width: 100%;
     height: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     
 }
 .card__post{
     width: 70%;
     height: 500px;
+    
 }
+.post__name{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.post__profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    /* justify-content: ; */
+}
+.post__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post__header--photo{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1.3rem ;
+    border: solid rgb(160, 67, 23) 2px;
+    background-color: blueviolet; 
+}
+.picture{
+    padding-top:10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.interact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.buttons__interact{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: .3125rem;
+}
+.btn{
+    border: 0;
+    background: none;
+}
+.footer__post{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    padding-top: .3125rem;
+}
+.footer__info__container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.footer__username{
+    padding-right: .3125rem;
+}
+
+
 
 
 
