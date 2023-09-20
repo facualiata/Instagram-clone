@@ -1,21 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Quicksand:wght@400;700&family=Satisfy&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
 }
 a{
     text-decoration: none;
-    
-    color: black
-    /* color: whitesmoke; */
+    color: whitesmoke;
+    font-family: 'Catamaran', sans-serif;
+    font-size: large;
 }
 li{
     list-style: none;
+    font-family: 'Catamaran', sans-serif;
 }
 p{
     display: flex;
     justify-content: center;
     padding: 0;
     margin: 0;
+    color: whitesmoke;
+    font-family: 'Catamaran', sans-serif;
 }
 .header{
     display: flex;
@@ -31,6 +38,10 @@ p{
     justify-content: flex-start;
     align-items: center;
     padding-left: 1.875rem;
+    font-family: 'Satisfy', cursive;
+    font-size: xx-large;
+    font-weight: 400;
+    color: whitesmoke;
 }
 .header__nav{
     display: flex;
@@ -90,6 +101,7 @@ p{
 .card__post{
     width: 70%;
     height: 500px; 
+    padding-bottom: 200px;
 }
 .post__name{
     display: flex;
@@ -127,13 +139,19 @@ p{
     flex-wrap: wrap;
 }
 .buttons__interact{
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: .3125rem;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 2rem;
 }
 .btn{
+    width: 2.2rem;
+    height: 1.7rem;
     border: 0;
     background: none;
+    color: whitesmoke;
+    border-radius: 2rem;
+    border: solid black ;
 }
 .footer__post{
     width: 100%;
@@ -163,6 +181,7 @@ p{
 .comments{
     border:0;
     color: white;
+    background-color: black;
 }
 .content__final{
     display: flex;
@@ -175,7 +194,7 @@ p{
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    height: 60%;
+    height: 30rem;
     padding-top: 50px;
     padding-left: 40px;   
 }
@@ -214,7 +233,7 @@ p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 80%;
+    height: 25rem;
     padding:0;
     padding-top: 40px;
     /* justify-content: space-around; */
@@ -222,7 +241,7 @@ p{
 .suggestions{
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -246,13 +265,16 @@ p{
 .follow{
     padding-right: 40px;
     padding-top: 17px;
+    font-size: medium;
 }
 .change{
     padding-right: 40px;
+    font-size: medium;
 }
 .footer{
     width: 100%;
     height: 40%;
+    padding-left: 35px;
 }
 .footer__links{
     width: 100%;
@@ -271,6 +293,9 @@ p{
     height: 1.875rem;
     border-radius: .9375rem;
 }
+.footer__title{
+    color: whitesmoke;
+}
 #template{
     margin: 0;
     padding: 0;
@@ -279,4 +304,12 @@ p{
     display: flex;
     border: solid whitesmoke .125rem;
     overflow-x: hidden;
+    background-color: black;
+}
+@media  screen and(max-width:300px) {
+    #template{
+        display: grid;
+        grid-template-areas: 
+        "";
+    }
 }
